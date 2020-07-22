@@ -1,0 +1,29 @@
+{
+  "name": "@josefransaenz/hypergate-core",
+  "version": "0.3.0",
+  "description": "A library for the integration of local resources to the Internet of Things",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "doc": "jsdoc2md -t jsdoc2md/README.hbs index.js > README.md --global-index-format none --partial jsdoc2md/header.hbs --partial jsdoc2md/link.hbs --partial jsdoc2md/body.hbs --helper jsdoc2md/ddata.js --helper jsdoc2md/helpers.js",
+    "dist-doc": "cp README.md ../../../docs/hypergate/hypergate/README.md"
+  },
+  "author": "Jose F. Saenz-Cogollo",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "ajv": "6.0.1",
+    "eventemitter2": "5.0.1",
+    "jsonfile": "4.0.0",
+    "url-pattern": "1.0.3",
+    "zeromq": "4.6.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "jsdoc-to-markdown": "4.0.1",
+    "lerna": "^3.22.1",
+    "mocha": "8.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

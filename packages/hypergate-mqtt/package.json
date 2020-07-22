@@ -1,0 +1,21 @@
+{
+  "name": "@josefransaenz/hypergate-mqtt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "doc": "jsdoc2md -t jsdoc2md/README.hbs index.js > README.md",
+    "dist-doc": "cp README.md ../../../docs/hypergate/hypergate-mqtt/README.md"
+  },
+  "author": "Jose F. Saenz-Cogollo",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@josefransaenz/hypergate-core": "^0.3.0",
+    "chai": "4.1.2",
+    "mocha": "8.0.1"
+  },
+  "dependencies": {
+    "mqtt": "2.15.1"
+  }
+}

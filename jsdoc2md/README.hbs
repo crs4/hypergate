@@ -1,0 +1,60 @@
+# Hypergate
+This library provides a single class called [`Hypergate`](#Hypergate) which controls the execution
+of resource-specific applications (plugins) and emits events or messages about their status and data obtained.
+
+Depending of the type of execution and the communication mode needed, a plugin can be defined inside of one of three categories: 
+* __Routines__: applications that are executed with the aim of obtaining a result (measurement or 
+data acquisition) and may only need to receive input data at the begining of their execution and
+may only return output data at the end. The exchange of input and output data with this mode of
+plugins can be done thorugh a JSON file. 
+* __Tasks__: applications that may need to be executed independently of the parent process and may 
+need/produce formatted input/output data to/from the standard I/O. 
+* __Services__: applications that may need to be executed all the time or for a exteded period of 
+time and may need to periodically o episodically send or receive information. This type of 
+plugins can provide a [ZeroMQ](http://zeromq.org) endpoint to which the Hypergate instance can connect a [ZMQ_DEALER
+socket](http://api.zeromq.org/4-2:zmq-socket#toc24) for establishing a bidirectional any-time communication channel.
+
+# Example
+```js
+const Hypergate = require('hypergate')
+
+const hypergate = new Hypergate({
+routines: {
+    myRoutine: {
+        command: 'myRoutine.exe',
+        args: ['myArg1', 'myArg2'],
+        path: '/path/to/myRoutine',
+        jsonFile: 'temp.json',
+        jsonFileSchema: {
+            type: 'object',
+            properties: { 
+                foo: { type: 'string'},
+                bar: { type: 'array'}
+            }
+        }
+    }  
+}
+ });
+ 
+ hypergate.once('routines/myRoutine/completed', (outputData) =>  {
+ 	console.log('myRoutine was completed with the following result: ' + outputData.bar);
+ });
+ 
+ hypergate.once('routines/myRoutine/error', (error) =>  {
+ 	console.error('Error while executing myRoutine: ' + error);
+ });
+
+ var inputData = { foo: 'val1' };
+
+ hypergate.command('routines/myRoutine/start', inputData)
+ .then(() => {
+ 	console.log('myRoutine is executing!');
+ }); 
+ .catch((error) => {
+ 	console.error('myRoutine could not be executed ' + error);
+ }); 
+ ```
+
+# API Reference
+
+{{>main}}

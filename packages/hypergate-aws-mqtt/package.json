@@ -1,0 +1,22 @@
+{
+  "name": "@josefransaenz/hypergate-aws-mqtt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "doc": "jsdoc2md -t jsdoc2md/README.hbs index.js > README.md",
+    "dist-doc": "cp README.md ../../../docs/hypergate/hypergate-aws-mqtt/README.md"
+  },
+  "author": "Jose F. Saenz-Cogollo",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "aws-iot-device-sdk": "2.2.0"
+  },
+  "devDependencies": {
+    "@josefransaenz/hypergate-core": "^0.3.0",
+    "aws-mqtt-client": "0.0.5",
+    "chai": "4.1.2",
+    "mocha": "8.0.1"
+  }
+}

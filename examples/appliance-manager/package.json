@@ -1,0 +1,21 @@
+{
+  "name": "appliance-manager",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "nexe index.js -o ../../../dist/device-manager/appliance-manager.exe",
+    "dist-doc": "cp {README.md,appliance-manager-schema.png} ../../../docs/hypergate/appliance-manager/"
+  },
+  "author": "",
+  "license": "To be defined",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "crypto-json": "^2.0.0",
+    "hypergate": "file:../hypergate",
+    "hypergate-aws-mqtt": "file:../hypergate-aws-mqtt",
+    "jsonfile": "^4.0.0",
+    "wifi-control": "^2.0.1"
+  }
+}
