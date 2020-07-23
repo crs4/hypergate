@@ -1,4 +1,9 @@
-# Hypergate
+# Installation
+````
+npm install @josefransaenz/hypergate-core
+````
+
+# hypergate-core
 This library provides a single class called [`Hypergate`](#Hypergate) which controls the execution
 of resource-specific applications (plugins) and emits events or messages about their status and data obtained.
 

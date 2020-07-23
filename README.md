@@ -1,10 +1,9 @@
 # Introduction
 Hypergate is a library for the integration of local resources to the Internet of Things (IoT).
 It can be used for creating edge applications and IoT gateway software by combining
-resource-specific applications (plugins) with protocol-specific modules (web interfaces). An example of an IoT gateway 
-application created with Hypergate is presented in the [`Appliance Manager`](./packages/appliance-manager/README.md) section. 
+resource-specific applications (plugins) with protocol-specific modules (web interfaces).
 
-The library provides a single class called [`Hypergate`](./packages/hypergate-core/README.md#Hypergate) which controls the execution
+The core module provides a single class called [`Hypergate`](./packages/hypergate-core/README.md#Hypergate) which controls the execution
 of plugins and emits events that can be used by a web interface to relay messages to web/cloud 
 applications.
 
@@ -26,3 +25,7 @@ protocol. Some of the availables web interfaces are:
 # Schema of a typical Hypergate-based IoT application
 ![Hypergate Schema](Hypergate-schema.png)
 
+# Installation
+````
+npm install @josefransaenz/hypergate-core
+````
