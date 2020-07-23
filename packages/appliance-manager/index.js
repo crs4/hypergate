@@ -1,5 +1,5 @@
-const Hypergate = require('hypergate');
-const HypergateAWSMqtt = require('hypergate-aws-mqtt');
+const Hypergate = require('@josefransaenz/hypergate-core');
+const HypergateAWSMqtt = require('@josefransaenz/hypergate-aws-mqtt');
 const fs = require('fs');
 const jsonfile = require('jsonfile');
 const cryptoJSON = require('crypto-json');

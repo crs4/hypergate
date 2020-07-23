@@ -2,7 +2,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 const request = require('supertest');
-const Hypergate = require('../../hypergate/index');
+const Hypergate = require('@josefransaenz/hypergate-core');
 const hgExpress = require('../index'); 
 
 

@@ -3,7 +3,7 @@ const expect = chai.expect;
 const HypergateMqtt = require('../index');
 const mqtt = require('mqtt');
 
-const Hypergate = require('hypergate');
+const Hypergate = require('@josefransaenz/hypergate-core');
 function logger(hypergate) {
     hypergate.onAny(function(event, value) {
         console.log(`*** Event: ${event}, *** Payload: ${JSON.stringify(value)}.`);

@@ -1,5 +1,5 @@
 {
-  "name": "appliance-manager",
+  "name": "@josefransaenz/appliance-manager",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
     "build": "nexe index.js -o ../../../dist/device-manager/appliance-manager.exe",
     "dist-doc": "cp {README.md,appliance-manager-schema.png} ../../../docs/hypergate/appliance-manager/"
   },
-  "author": "",
-  "license": "To be defined",
+  "author": "Jose F. Saenz-Cogollo",
+  "license": "GPL-3.0",
   "dependencies": {
-    "axios": "^0.17.1",
-    "crypto-json": "^2.0.0",
-    "hypergate": "file:../hypergate",
-    "hypergate-aws-mqtt": "file:../hypergate-aws-mqtt",
-    "jsonfile": "^4.0.0",
-    "wifi-control": "^2.0.1"
+    "@josefransaenz/hypergate-aws-mqtt": "^1.0.0",
+    "@josefransaenz/hypergate-core": "^0.3.0",
+    "axios": "0.17.1",
+    "crypto-json": "2.0.0",
+    "jsonfile": "4.0.0",
+    "wifi-control": "2.0.1"
   }
 }

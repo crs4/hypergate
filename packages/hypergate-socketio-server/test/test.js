@@ -11,7 +11,7 @@ const options = {
     serveClient: false
 };
 
-const Hypergate = require('hypergate');
+const Hypergate = require('@josefransaenz/hypergate-core');
 
 
 describe('hypergate-socketio-server', function() {

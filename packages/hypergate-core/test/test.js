@@ -1,7 +1,7 @@
 
 const chai = require('chai');
 const expect = chai.expect;
-const Hypergate = require('@josefransaenz/hypergate-core');
+const Hypergate = require('../');
 
 function logger(hypergate) {
     hypergate.onAny(function(event, value) {

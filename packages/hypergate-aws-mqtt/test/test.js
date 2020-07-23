@@ -19,7 +19,7 @@ const AWSMqttOptions_local = {
     host: 'a3tk5mzwsmjqfw.iot.eu-central-1.amazonaws.com'
 };
 
-const Hypergate = require('hypergate');
+const Hypergate = require('@josefransaenz/hypergate-core');
 function logger(hypergate) {
     hypergate.onAny(function(event, value) {
         console.log(`*** Event: ${event}, *** Payload: ${JSON.stringify(value)}.`);
