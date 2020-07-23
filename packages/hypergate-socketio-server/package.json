@@ -1,6 +1,6 @@
 {
   "name": "@josefransaenz/hypergate-socketio-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "socket.io": "2.0.4"
   },
   "devDependencies": {
-    "@josefransaenz/hypergate-core": "^1.0.2",
+    "@josefransaenz/hypergate-core": "^1.0.3",
     "chai": "4.1.2",
     "mocha": "5.0.0",
     "socket.io-client": "2.0.4"
