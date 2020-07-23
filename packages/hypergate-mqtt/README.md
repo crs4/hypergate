@@ -23,8 +23,8 @@ An instance of the HypergateMqtt class is a [mqtt.js Client instance](https://ww
 
 **Example**  
 ```js
-const Hypergate = require('hypergate'); 
-const HypergateMqtt = require('hypergate-mqtt');
+const Hypergate = require('@josefransaenz/hypergate-core'); 
+const HypergateMqtt = require('@josefransaenz/hypergate-mqtt');
 
 const hypergate = new Hypergate(<YourPluginsSpecification>);
 

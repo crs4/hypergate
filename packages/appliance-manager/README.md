@@ -1,5 +1,5 @@
 # Appliance Manager
-appliance-manager is a demo IoT gateway application build on top of [__hypergate core__](../hypergate/README.md) and 
+appliance-manager is a demo IoT gateway application build on top of [__hypergate core__](../hypergate-core/README.md) and 
 [__hypergate-aws-mqtt__](../hypergate-aws-mqtt/README.md) modules and allows the integration of devices, algorithms 
 and administrative scripts to a web application based on Amazon Web Services Internet of Things Core ([AWS IoT Core](https://aws.amazon.com/iot-core/)) service. 
 
@@ -13,7 +13,7 @@ the application identification number and local network settings. It also provid
 ## Installation and settings
 Install the appliance-manager package (or the executable file) in a folder containing the following: 
 * a `plugins.json` file containing the specification of the plugins to be used in the format 
-need by the [__hypergate core__](../hypergate/README.md) core module
+need by the [__hypergate core__](../hypergate-core/README.md) core module
 * a `/certificate` folder containing the .pem file for the certification authority
 * a `config.json` file containing an object with the following attributes: 
   * `host`: URL of the AWS IoT endpoint
@@ -24,7 +24,7 @@ need by the [__hypergate core__](../hypergate/README.md) core module
 
 ## Usage
 The application acts as a MQTT client subscribed to all messages belonging to the topics 
-`{clientId}/command/#` and publish messages to the topics `{clientId}/event/#` (see documentation of  [__hypergate__](../hypergate/README.md)). All messages and errors are logged in the console.
+`{clientId}/command/#` and publish messages to the topics `{clientId}/event/#` (see documentation of  [__hypergate__](../hypergate-core/README.md)). All messages and errors are logged in the console.
 
 The application also provides a local HTTP server for local settings with the following endpoints:
 * http://localhost:3000/clientId : useful for obtaining the clientId of the instance from the 

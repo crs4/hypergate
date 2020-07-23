@@ -21,4 +21,32 @@ An instance of the HypergateAWSMqtt class is a [mqtt.js Client instance](https:/
 | AWSMqttOptions | <code>object</code> | AWSIoT-specific arguments as specified in the [aws-iot-device-sdk documentation](https://www.npmjs.com/package/aws-iot-device-sdk#device) |
 
 **Example**  
-```jsconst Hypergate = require('hypergate'); const HypergateAWSMqtt = require('hypergate-aws-mqtt');const hypergate = new Hypergate(<YourPluginsSpecification>);const AWSMqttOptions = {  keyPath: <YourPrivateKeyPath>,  certPath: <YourCertificatePath>,  caPath: <YourRootCACertificatePath>,  clientId: <YourUniqueClientIdentifier>,  host: <YourCustomEndpoint>};const baseTopic = <YourBaseTopicString>;const mqttClient = new HypergateAWSMqtt(hypergate, baseTopic, AWSMqttOptions); mqttClient.on('message', function (topic, message) {  console.log(`*** Topic: '${topic}',  Payload: ${message.toString()}`);});mqttClient.on('connect', function () {  console.log('*** Connect');});mqttClient.on('close', () => {  console.log('** Disconect');});```
+```js
+const Hypergate = require('@josefransaenz/hypergate-core'); 
+const HypergateAWSMqtt = require('@josefransaenz/hypergate-aws-mqtt');
+
+const hypergate = new Hypergate(<YourPluginsSpecification>);
+
+const AWSMqttOptions = {
+  keyPath: <YourPrivateKeyPath>,
+  certPath: <YourCertificatePath>,
+  caPath: <YourRootCACertificatePath>,
+  clientId: <YourUniqueClientIdentifier>,
+  host: <YourCustomEndpoint>
+};
+const baseTopic = <YourBaseTopicString>;
+
+const mqttClient = new HypergateAWSMqtt(hypergate, baseTopic, AWSMqttOptions); 
+
+mqttClient.on('message', function (topic, message) {
+  console.log(`*** Topic: '${topic}',  Payload: ${message.toString()}`);
+});
+
+mqttClient.on('connect', function () {
+  console.log('*** Connect');
+});
+
+mqttClient.on('close', () => {
+  console.log('** Disconect');
+});
+```

@@ -14,8 +14,8 @@ const awsIot = require('aws-iot-device-sdk');
  * @param {object} AWSMqttOptions - AWSIoT-specific arguments as specified in the {@link https://www.npmjs.com/package/aws-iot-device-sdk#device|aws-iot-device-sdk documentation}
  * @example
  * ```js
- * const Hypergate = require('hypergate'); 
- * const HypergateAWSMqtt = require('hypergate-aws-mqtt');
+ * const Hypergate = require('@josefransaenz/hypergate-core');
+ * const HypergateAWSMqtt = require('@josefransaenz/hypergate-aws-mqtt');
  * 
  * const hypergate = new Hypergate(<YourPluginsSpecification>);
  * 

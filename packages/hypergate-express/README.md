@@ -24,9 +24,9 @@ The module provides a single method for creating an Express object .
 
 **Example**  
 ```js
-const Hypergate = require('hypergate'); 
+const Hypergate = require('@josefransaenz/hypergate-core'); 
 const hypergate = new Hypergate(<YourPluginsSpecification>);
-const hgExpress = require('hypergate-express');
+const hgExpress = require('@josefransaenz/hypergate-express');
 const app = hgExpress(hypergate);
 
 // On the client...

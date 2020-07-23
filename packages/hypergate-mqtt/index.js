@@ -11,8 +11,8 @@ const mqtt = require('mqtt');
  * @param {object} options - MQTT.js options
  * @example
  * ```js
- * const Hypergate = require('hypergate'); 
- * const HypergateMqtt = require('hypergate-mqtt');
+ * const Hypergate = require('@josefransaenz/hypergate-core');
+ * const HypergateMqtt = require('@josefransaenz/hypergate-mqtt');
  * 
  * const hypergate = new Hypergate(<YourPluginsSpecification>);
  *

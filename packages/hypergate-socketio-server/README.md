@@ -23,8 +23,8 @@ An instance of the HypergateAWSMqtt class is a [| Socket.io Server instance](htt
 
 **Example**  
 ```js
-const Hypergate = require('hypergate'); 
-const HgSocketIoServer = require('hypergate-socketio-server');
+const Hypergate = require('@josefransaenz/hypergate-core'); 
+const HgSocketIoServer = require('@josefransaenz/hypergate-socketio-server');
 const io = require('socket.io-client');
 const httpServer = require('http').createServer();
 const port = 3000;

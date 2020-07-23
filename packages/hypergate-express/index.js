@@ -7,7 +7,7 @@ const express = require('express')
  * @return {object} Express object app
  * @example
  * ```js
- * const Hypergate = require('hypergate'); 
+ * const Hypergate = require('@josefransaenz/hypergate-core');
  * const hypergate = new Hypergate(<YourPluginsSpecification>);
  * const hgExpress = require('hypergate-express');
  * const app = hgExpress(hypergate);

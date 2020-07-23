@@ -16,7 +16,7 @@ socket](http://api.zeromq.org/4-2:zmq-socket#toc24) for establishing a bidirecti
 
 # Example
 ```js
-const Hypergate = require('hypergate')
+const Hypergate = require('@josefransaenz/hypergate-core')
 
 const hypergate = new Hypergate({
 routines: {
