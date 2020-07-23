@@ -1,6 +1,6 @@
 {
   "name": "@josefransaenz/hypergate-mqtt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "Jose F. Saenz-Cogollo",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@josefransaenz/hypergate-core": "^1.0.0",
+    "@josefransaenz/hypergate-core": "^1.0.1",
     "chai": "4.1.2",
     "mocha": "5.0.0"
   },
