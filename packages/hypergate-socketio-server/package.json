@@ -22,5 +22,6 @@
   },
   "peerDependencies": {
     "hypergate": "file:../hypergate"
-  }
+  },
+  "gitHead": "5b18820455ec1ec4133e9cb707ca1cc2281fbd61"
 }

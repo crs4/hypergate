@@ -1,7 +1,7 @@
 {
   "name": "hypergate-monorepo",
   "version": "1.0.0-monorepo",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "lerna": "^3.22.1"
   },
